@@ -8,7 +8,7 @@ df[df==-999]<-NA
 df<-na.omit(df)
 
 # Predictor variables 
-X <- as.matrix(df[,seq(from=2,to=32,by=1)])
+X <- as.matrix(df[,seq(from=2,to=31,by=1)])
 
 # Add ones to X 
 X <- cbind(rep(1,nrow(X)),X)
